@@ -1,0 +1,40 @@
+a:link {color:#FF0000;}      /* unvisited link */
+a:visited {color:green;}   /* visited link */
+a:hover {color:red;}     /* mouse over link */
+a:active {color:#0000FF;}    /* selected link */
+p.pos_fixed
+{
+position:fixed;
+top:30px;
+right:5px;
+}
+div:img
+{
+position:absolute;
+left:100px;
+top:150px;
+z-index:-1;
+}
+h1.pos_top
+{
+position:relative;
+top:-50px;
+}
+div
+{
+float:right;
+}
+#sidebar-2 {
+    float: left;
+    padding: 5% 0 3%;
+    margin-right: 30px;
+    width: 138px;
+}
+
+.sidebar-none #sidebar-2 {
+    display: none;
+}
+
+#content {
+    width: 100px;
+}

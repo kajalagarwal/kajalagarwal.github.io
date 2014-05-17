@@ -1,0 +1,26 @@
+p{font-family:"Times New Roman", Times, serif;}
+h1.normal {font-style:normal;}
+h2.normal {font-style:normal;}
+h3.normal {font-style:normal;}
+h4.normal {font-style:normal;}
+h5.normal {font-style:normal;}
+h6.normal {font-style:normal;}
+ h1 {background-color:#6495ed;}
+p {background-color:#e0ffff;}
+a {background-color:#b0c4de;}
+h1
+{
+text-align:center;
+color:red;
+}
+
+h2
+{
+text-align:center;
+color:red;
+}
+#We
+{
+text-align:center;
+color:red;
+}

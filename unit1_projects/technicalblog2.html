@@ -1,0 +1,94 @@
+<head>
+<style>
+    div{
+    media:"all";
+    }
+
+
+
+#container{
+background-color:purple;
+height:100%;
+width:100%;
+
+}
+a{
+color:blue;
+}
+new{
+background-color:purple;
+}
+#footer{
+
+   color:black;
+   background-color:grey;
+   border:solid black;
+   float:down;
+}
+#header h2{
+text-align:left;
+}
+#header{
+float:center;
+color:black;
+background-color:grey;
+   border:solid black;
+   text-align:center;
+
+
+}
+
+img{
+   height:15em;
+   width:15em;
+   }
+#newer{
+background-color:purple;
+
+
+float:left;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<div id="header">
+<p>Technical Blog by<a href="kajalagarwal.github.io"> kajal agarwal</a></p>
+<p><b><h1>Difference between Class and id in CSS.</h1></b></p>
+
+</div>
+<div id="newer">
+<h1>Class</h1>
+<ul>
+<li><h3>Classes are not unique<h3></li>
+<ol><li> You can use the same class on multiple elements.</li>
+<li>You can use multiple classes on the same element. </li>
+<li>Combining class selectors</li>
+<p>Any styling information that needs to be applied to multiple objects on a page should be done with a class. Take for example a page with multiple "div" but same class "wedge" is allowed.</p>
+<p>You can use multiple classes to style an
+HTML element but you can only use one ID when styling an HTML element.
+This means that class selectors have a wider range of applications</p>
+</ol>
+</ul>
+<img src="images/image.jpg"/>
+</div>
+<div id="newer">
+<h1>Id's</h1>
+<ul>
+<li><h3>Id's are unique<h3></li>
+<ol><li> Each page can have only one element with that ID</li>
+<li>Each element can have only one ID
+</li>
+<li> IDs have higher specificity than classes</li>
+<p>In id's you need to understand that your code will become invalid if you applied same id to more then 1 element which is not the case in classes. This is why mostly programmers prefer to use class over id because it reduce redundancy.</p>
+<p>There may be times when a declaration conflicts with another declaration. These conflicts are resolved using the Cascade
+rules. In simple terms, if a class selector and ID selector were to be in conflict, the ID selector would be chosen.</p>
+</ol>
+</ul>
+</div>
+</div>
+<div id="footer">
+<p>In the end I mostly recommend <a href="http://www.tizag.com/cssT/cssid.php">this</a> tutorial to understand the concept more better.
+</div>
+
+</body>

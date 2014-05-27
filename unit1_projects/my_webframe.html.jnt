@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-image:url("bgdesert.jpg");}
+#footer{
+
+   color:black;
+   background-color:grey;
+   border:solid black;
+   float:left;
+   height:10em;
+   width:10em;
+}
+</style>
+</head>
+<body>
+<div id="container" style="background-color:#EEEEEE;">
+
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">Web design by kajal Agarwal</h1></div>
+
+<div id="menu" style="background-color:red;height:700px;width:100px;float:left;">
+<b>Menu</b><br>
+<a href="https://github.com/kajalagarwal">Github</a><br>
+<a href="mailto:kajalagarwal.7@gmail.com">Gmail</a><br>
+<a href="http://www.linkedin.com/in/kajalagarwalucr/">Linkedin</a></div>
+
+<div id="footer">
+  <b><em>content of post</em><b>
+</div>
+
+<div id="Right" style="background-color:red;height:700px;width:100px;float:right;">
+Check my blogs here<br>
+<a href="technicalblog.html">Techical blog</a><br>
+<a href="culturalblog.html">Cultural blog</a><br>
+<a href="webframe.html">Webframe blog</a><br>
+<a href="technicalblog2.html">technical blog 2</a><br>
+</div>
+
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+Thanks for reading my blogs</div>
+
+</div>
+
+</body>
+</html>

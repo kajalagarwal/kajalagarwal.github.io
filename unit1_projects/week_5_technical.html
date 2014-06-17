@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>
+	Kajal Agarwal
+	</title>
+	<style>
+	#container{
+    text-color:black;
+    text-size: 10px;
+    }
+    a{
+    color:green;}
+
+    p{
+    font-size:25px;
+    }
+    li{
+    font-size:20px;
+    }
+    footer.img{
+    height:20px;
+    width:20px;
+    }
+    footer{
+    font-size:10px;
+    }
+    #block{
+        text-align: left;
+        text-color:green;
+        background-color: purple;
+    }
+
+	</style>
+</head>
+<body background="http://www.myfreetextures.com/wp-content/uploads/2011/06/old-paper-floral-parchment-background-texture.jpg">
+    <div id="container">
+			<div id="header">
+		<h1><b>Technical Blog 4</b></h1>
+		<p>
+				<a href="https://kajalagarwal.github.io">Home</a>
+				<a href="https://github.com/kajalagarwal">Github</a>
+		        <a href="mailto:kajalagarwal.7@gmail.com">Gmail</a>
+        <a href="http://www.linkedin.com/in/kajalagarwalucr/">Linkedin</a>
+        </p>
+</div>
+
+	<h1><em>Classes</h1></em><br>
+	 <h2>When</h2>
+	 <p>Classes is basically a block where you store the functions. </p>
+	 <p>Whenever you want to use the functio depend on an  instances you sed classes i.e using classes you can make your functions instatiate.</p>
+	 <p> Class can be initialized as</p>
+     <div id="block">class Song<br>
+  def initialize(name, artist, duration)<br>
+    @name     = name<br>
+    @artist   = artist<br>
+    @duration = duration<br>
+  end<br>
+end<br></div>
+	 <p>As shown above you can initialize your elements</p>
+
+     <h2>Why</h2>
+     <p>Using class you can have every instance variables such as:</p> 
+     <h3>Local Variable</h3>
+     <p> Local variables are the variables that are defined in a method. Local variables are not available outside the method. You will see more details about method in subsequent chapter. Local variables begin with a lowercase letter or _.</p>
+     <h3>Global Variable</h3>
+     <p>Class variables are not available across classes. If you want to have a single variable, which is available across classes, you need to define a global variable. The global variables are always preceded by the dollar sign ($).</p>
+     <h3>Instance Variable</h3>
+     <p>Instance variables are available across methods for any particular instance or object. That means that instance variables change from object to object. Instance variables are preceded by the at sign (@) followed by the variable name.</p>
+     <h3>Class Variable</h3>
+     <p>Class variables are available across different objects. A class variable belongs to the class and is a characteristic of a class. They are preceded by the sign @@ and are followed by the variable name.</p>
+     <h2>Example Code</h2>
+     <div id="block">class Item<br>
+  def initialize(item_name)<br>
+    @item_name = item_name<br>
+  end<br>
+  
+  def show<br>
+    puts "Instance method show invoked for '#{self}'"<br>
+  end  <br>
+  
+  def to_s<br>
+    "Item: #{@item_name}"<br>
+  end<br>
+  
+end<br>
+
+Item.new("silence").show<br></div>
+
+     <div id="footer">
+		<h3><b>Useful links</b></h1>
+		<p>
+
+				<a href="http://phrogz.net/programmingruby/tut_classes.html">First</a>
+				<a href="http://www.tutorialspoint.com/ruby/ruby_classes.html">Second</a>
+        </p>
+</div>
+     Authored by <a href="mailto:kajalagarwal.7@gmail.com"><img border-radius="15px" src="images/myimage.jpg" alt="Pulpit rock" width="80px" height="80px"></a><br>
+</div>
+</body>
+</html>

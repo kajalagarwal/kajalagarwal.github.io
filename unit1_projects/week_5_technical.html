@@ -2,17 +2,25 @@
 <head>
 <title>
 	Kajal Agarwal
-	</title>
-	<style>
+</title>
+<style>
 	#container{
-    text-color:black;
+    text-color:red;
     text-size: 10px;
+    margin:10px 200px 10px 200px;
+     opacity: 0.4;
+    filter: alpha(opacity=40);
+    background-color: lightgrey;
+    border-radius: 20px;
+    border:2px solid;
+    padding: 5px 5px 5px 5px;
     }
     a{
     color:green;}
 
     p{
     font-size:25px;
+    color:blue;
     }
     li{
     font-size:20px;
@@ -21,18 +29,33 @@
     height:20px;
     width:20px;
     }
+
     footer{
     font-size:10px;
     }
     #block{
         text-align: left;
-        text-color:green;
-        background-color: purple;
+        color:darkblue;
+        position:relative;
+        padding: 5px 5px 5px 5px;
+        right:5px;
+        margin:2px 20px 2px 20px;
+         opacity: 0.8;
+    filter: alpha(opacity=20);
+    background-color: lightpink ;
+    border-radius: 20px;
+    border:1px solid;
     }
 
-	</style>
+    body{
+        background:url("file:///home/kajalagarwal/image2.jpg") no-repeat fixed 0% 0%;
+        background-size: 100%;
+
+    }
+
+</style>
 </head>
-<body background="http://www.myfreetextures.com/wp-content/uploads/2011/06/old-paper-floral-parchment-background-texture.jpg">
+<body>
     <div id="container">
 			<div id="header">
 		<h1><b>Technical Blog 4</b></h1>
@@ -59,7 +82,7 @@ end<br></div>
 	 <p>As shown above you can initialize your elements</p>
 
      <h2>Why</h2>
-     <p>Using class you can have every instance variables such as:</p> 
+     <p>Using class you can have every instance variables such as:</p>
      <h3>Local Variable</h3>
      <p> Local variables are the variables that are defined in a method. Local variables are not available outside the method. You will see more details about method in subsequent chapter. Local variables begin with a lowercase letter or _.</p>
      <h3>Global Variable</h3>
@@ -73,15 +96,15 @@ end<br></div>
   def initialize(item_name)<br>
     @item_name = item_name<br>
   end<br>
-  
+
   def show<br>
     puts "Instance method show invoked for '#{self}'"<br>
   end  <br>
-  
+
   def to_s<br>
     "Item: #{@item_name}"<br>
   end<br>
-  
+
 end<br>
 
 Item.new("silence").show<br></div>

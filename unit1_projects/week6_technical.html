@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>
+	Kajal Agarwal
+</title>
+<style>
+	#container{
+    text-color:red;
+    text-size: 10px;
+    margin:10px 200px 10px 200px;
+     opacity: 0.4;
+    filter: alpha(opacity=40);
+    background-color: lightgrey;
+    border-radius: 20px;
+    border:2px solid;
+    padding: 5px 5px 5px 5px;
+    }
+    a{
+    color:green;}
+
+    p{
+    font-size:25px;
+    color:blue;
+    }
+    li{
+    font-size:20px;
+    }
+    footer.img{
+    height:20px;
+    width:20px;
+    }
+   
+    footer{
+    font-size:10px;
+    }
+    #block{
+        text-align: left;
+        color:darkblue;
+        position:relative;
+        padding: 5px 5px 5px 5px;
+        right:5px;
+        margin:2px 20px 2px 20px;
+         opacity: 0.8;
+    filter: alpha(opacity=20);
+    background-color: lightpink ;
+    border-radius: 20px;
+    border:1px solid;
+    }
+#comment_block{
+    text-align: left;
+        color:black;
+        position:relative;
+        padding: 5px 5px 5px 5px;
+        right:5px;
+        margin:2px 20px 2px 20px;
+         opacity: 1.2;
+    filter: alpha(opacity=20);
+    background-color: lightpink;
+    
+    border:1px solid;
+}
+    
+    body{
+        background:url("http://fc01.deviantart.net/fs71/i/2012/214/e/2/dark_forest_unicorn_by_mistysteel-d59ixbg.jpg") no-repeat fixed 0% 0%;
+        background-size: 100% 100%;
+
+    }
+
+</style>
+</head>
+<body>
+    <div id="container">
+			<div id="header">
+		<h1><b>Technical Blog 6</b></h1>
+		<p>
+				<a href="https://kajalagarwal.github.io">Home</a>
+				<a href="https://github.com/kajalagarwal">Github</a>
+		        <a href="mailto:kajalagarwal.7@gmail.com">Gmail</a>
+        <a href="http://www.linkedin.com/in/kajalagarwalucr/">Linkedin</a>
+        </p>
+</div>
+
+	<h1><em>Ruby Concepts</h1></em><br>
+    <img src="http://media.tumblr.com/tumblr_mc1r5dT1h91rtan47.jpg">
+    <p>Ruby is an awesome piece of creation, Everyday I'm learning and discovering ruby in lot different and better way. just like other days today I dug more into how ruby closures work. here is my brief explanation after reading about ruby closures. thanks to the author for his wonderful writeup.
+     <br>
+    In  my Ii have worked in many different programming languages and ruby always stay one step apart from them because of its easiness and inbuilt function.
+    <br> 
+As we know ruby does lotta stuffs with closure, like in array iteration we are using closures in everywhere. Ruby has 4 type of closures - Block, Procs, Lambda and Method. I'm trying to explain them in brief. So i could use this post as my future reminder</p>
+	 <h2>Blocks</h2>
+	 <p>Block is a imprtant part of Ruby which delete the redundancy. It's used with '&' sign prefixed variable also executes using yield or *.call.</p>
+	 
+	 <h3> Block can be initialized as</h3>
+     <div id="block">=begin   <br>
+  Ruby Code blocks are chunks of code between braces or <br>  
+  between do- end that you can associate with method invocations <br>  
+=end   <br>
+def call_block <br>  
+  puts 'Start of method' <br>  
+  # you can call the block using the yield keyword <br>  
+  yield   <br>
+  yield   <br>
+  puts 'End of method' <br>  
+end   <br>
+# Code blocks may appear only in the source adjacent to a method call <br>  
+call_block {puts 'In the block'}  <br></div>
+	 <h3>The ouput of the above exemple is</h3>
+<div id="block">
+Start of method<br>  
+In the block  <br>
+In the block   <br> 
+End of method  <br>
+</div>
+     <h2>Procs</h2>
+     <p>Its used as other ruby data types (array, hash, string, fixnum etc..), it's reusable and could be used across multiple calls. also several procedures could be passed at a time. I works mostly as Block so it is upto user which he found more better to understand.</p>
+     <h3>Example of how method can take proc.</h3> 
+     <div id="block">=begin  <br>
+  You cannot pass methods into other methods (but you can pass procs into methods),   <br>
+  and methods cannot return other methods (but they can return procs)   <br>
+=end   <br>
+  
+def some_mtd some_proc  <br> 
+  puts 'Start calling'   <br>
+  some_proc.call   <br>
+  puts 'End calling'   <br>
+end   <br>
+  
+say = lambda do  <br> 
+  puts 'Hello Proc'   <br>
+end   <br>
+  
+some_mtd say  </div> <br>
+<h3>The output of the above example is</h3>  <br>
+<div id="block">Start calling   <br>
+Hello Proc  <br>
+End calling</div> <br> 
+
+     <h2>Lambda</h2>
+     <p>Lambda is just the functon without the name. Lambdas in ruby are also objects which sneak into the code easily. Unlike proc the last value of lambda is its return value. Lambdas have methods that can be assigned to values.</p>
+     <h3>Example Code</h3>
+     <div id="block">
+         l = lambda do |string|<br>
+  if string == "try"<br>
+    return "There's no such thing"<br> 
+  else<br>
+    return "Do or do not."<br>
+  end<br>
+end<br>
+puts l.call("try")<br>
+     </div>
+     <h3>The output of the abovecode is </h3>
+     <div id ="block">
+     There is no such thing<br>
+     </div>
+<br>
+
+
+     <div id="footer">
+		<h3><b>Useful links</b></h1>
+		<p>
+
+				<a href="http://phrogz.net/programmingruby/tut_classes.html">First</a>
+				<a href="http://www.tutorialspoint.com/ruby/ruby_classes.html">Second</a>
+        </p>
+</div>
+     Authored by <a href="mailto:kajalagarwal.7@gmail.com"><img border-radius="15px" src="images/myimage.jpg" alt="Pulpit rock" width="80px" height="80px"></a><br>
+</div>
+</body>
+</html>
